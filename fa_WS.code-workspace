@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tpp": "cpp",
+			"fstream": "cpp",
+			"iomanip": "cpp",
+			"iosfwd": "cpp",
+			"iostream": "cpp",
+			"*.tcc": "cpp",
+			"deque": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"system_error": "cpp",
+			"istream": "cpp"
+		},
+		"[cpp]": {
+			"editor.autoIndent": true,
+			"editor.quickSuggestions": {
+				"other": true,
+				"comments": false,
+				"strings": false
+			}
+		},
+		"terminal.integrated.shell.windows": "cmd.exe",
+		"python.linting.pylintEnabled": true,
+    	"python.linting.flake8Enabled": false,
+    	"python.linting.enabled": true,
+    	"python.pythonPath": "python3"
+	}
+}
