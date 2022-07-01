@@ -19,7 +19,7 @@
 			"istream": "cpp"
 		},
 		"[cpp]": {
-			"editor.autoIndent": true,
+			"editor.autoIndent": "full",
 			"editor.quickSuggestions": {
 				"other": true,
 				"comments": false,

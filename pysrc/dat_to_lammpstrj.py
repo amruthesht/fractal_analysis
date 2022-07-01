@@ -4,12 +4,12 @@ Project: fractal_analysis
 File Created: Saturday, 20th March 2021 3:22:02 pm
 Author: Amruthesh T (amru@seas.upenn.edu)
 -----
-Last Modified: Saturday, 20th March 2021 6:17:16 pm
+Last Modified: Thursday, 30th June 2022 7:23:03 pm
 Modified By: Amruthesh T (amru@seas.upenn.edu)
 -----
 Copyright (c) 2018 - 2019 Amru, University of Pennsylvania
 
-Summary: Fill In
+Summary: .dat to .lammpstrj convertor for binary files generated using the Quenching module
 '''
 
 import matplotlib.pyplot as plt
@@ -21,8 +21,6 @@ import os
 import itertools as it
 from scipy import stats
 import numpy_indexed as npi
-
-#plt.style.use('https://gist.githubusercontent.com/amruthesht/bd3febe2544cb96699b127a3e1f7d7a8/raw/439de31c30b68784519d8d7e81b1e31f8135b404/matplotlibstyle')
 
 output_foldername = "output/"
 graphs_foldername = "graphs/"
