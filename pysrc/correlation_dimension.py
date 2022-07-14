@@ -4,7 +4,7 @@ Project: fractal_analysis
 File Created: Thursday, 30th June 2022 7:22:10 pm
 Author: Amruthesh T (amru@seas.upenn.edu)
 -----
-Last Modified: Thursday, 30th June 2022 8:06:07 pm
+Last Modified: Wednesday, 13th July 2022 8:46:21 pm
 Modified By: Amruthesh T (amru@seas.upenn.edu)
 -----
 Copyright (c) 2020 - 2021 Amru, University of Pennsylvania
@@ -49,9 +49,15 @@ graphs_foldername = "graphs/"
 
 d = 3 # dimensionality of the system
 
+L = 1.0 # box size
+L_box = L * np.ones(d) # box size
+
 N_init = 342 # number of d-dimensional positions; N = 1 for a 3D system
 
 binning_type = 1 # 1 for unique binning, 2 for logarithmic binning, 3 for linear binning
+
+def periodic_BC_norm(x1, x2, L = L_box):
+    return np.linalg.norm((x1 - x2) - np.multiply(L, np.round(np.divide((x1 - x2), L))))
 
 PATH = join(input_foldername)
 dpos_filename = "positions.txt" # file name for the D-dimensional positions
@@ -75,6 +81,7 @@ labels = clustering.labels_ + 1
 x_decorr = np.max(clustering.distances_)
 
 dpos = pairwise_distances(dpos)
+# dpos = pairwise_distances(dpos, metric=periodic_BC_norm) # periodic boundary conditions
 # dpos = dpos[np.triu_indices(dpos.shape[0], 1)]
 # dpos = dpos[dpos>1e-3]
 
